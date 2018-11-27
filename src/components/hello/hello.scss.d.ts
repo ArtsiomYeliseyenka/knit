@@ -1,1 +1,2 @@
-export const button: string;
+export const hello: string;
+export const world: string;

@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports = (env = { development: true }) => {
-  const devMode = env.production;
+  const devMode = env.development;
   return {
     entry: [path.resolve('src', 'index.tsx')],
     output: {
@@ -84,21 +84,21 @@ module.exports = (env = { development: true }) => {
       ]
     },
 
-    optimization: {
-      namedModules: true,
-      noEmitOnErrors: true,
-      concatenateModules: true,
-      splitChunks: {
-        cacheGroups: {
-          styles: {
-            name: 'styles',
-            test: /\.css$/,
-            chunks: 'all',
-            enforce: true
-          }
-        }
-      }
-    },
+    // optimization: {
+    //   namedModules: true,
+    //   noEmitOnErrors: true,
+    //   concatenateModules: true,
+    //   splitChunks: {
+    //     cacheGroups: {
+    //       styles: {
+    //         name: 'styles',
+    //         test: /\.css$/,
+    //         chunks: 'all',
+    //         enforce: true
+    //       }
+    //     }
+    //   }
+    // },
 
     externals: {
       "react": "React",
