@@ -1,1 +1,1 @@
-export interface HelloProps { compiler: string; framework: string; }
+export interface IHello{ compiler: string; framework: string; }

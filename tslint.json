@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-eslint-rules",
+    "tslint-react",
+    "tslint-consistent-codestyle",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "no-submodule-imports": false,
+    "no-implicit-dependencies": [true, ["common"]]
+  }
+}

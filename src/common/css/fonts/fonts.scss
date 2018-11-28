@@ -1,25 +1,17 @@
-@mixin font-face($fontFamily, $filePath, $svgMark) {
+@mixin font-face($fontName) {
   @font-face {
-    font-family: $fontFamily;
-    src: url('#{$filePath}.eot');
-    src: url('#{$filePath}.eot?#iefix') format('embedded-opentype'),
-      url('#{$filePath}.woff2') format('woff2'), url('#{$filePath}.woff') format('woff'),
-      url('#{$filePath}.ttf') format('truetype'), url('#{$filePath}.svg##{$svgMark}') format('svg');
+    font-family: $fontName;
+    src: url('./#{$fontName}/#{$fontName}.eot');
+    src: url('./#{$fontName}/#{$fontName}.eot?#iefix') format('embedded-opentype'),
+      url('./#{$fontName}/#{$fontName}.woff2') format('woff2'),
+      url('./#{$fontName}/#{$fontName}.woff') format('woff'),
+      url('./#{$fontName}/#{$fontName}.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 }
 
-@include font-face('OpenSans', './OpenSans-Regular/OpenSans-Regular-webfont', 'open_sansregular');
-@include font-face(
-  'OpenSans-Semibold',
-  './OpenSans-Semibold/OpenSans-Semibold-webfont',
-  'open_sanssemibold'
-);
-@include font-face('OpenSans-Light', './OpenSans-Light/OpenSans-Light-webfont', 'open_sanslight');
-@include font-face(
-  'OpenSansCondBold',
-  './OpenSansCondensed-Bold/OpenSans-CondBold-webfont',
-  'open_sans_condensedbold'
-);
-@include font-face('Menlo-Regular', './Menlo-Regular/Menlo-Regular-webfont', 'menlo_regular');
+@include font-face('OpenSansRegular');
+@include font-face('OpenSansSemibold');
+@include font-face('OpenSansLight');
+@include font-face('OpenSansCondensedBold');
