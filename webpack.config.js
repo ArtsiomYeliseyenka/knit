@@ -18,7 +18,9 @@ module.exports = (env = { development: true }) => {
     resolve: {
       extensions: ['.ts', '.tsx', '.js', '.json'],
       alias: {
+        pages: path.resolve(__dirname, 'src/pages'),
         common: path.resolve(__dirname, 'src/common'),
+        components: path.resolve(__dirname, 'src/components'),
       },
     },
 
@@ -119,7 +121,6 @@ module.exports = (env = { development: true }) => {
 
     devServer: {
       compress: true,
-      open: true,
       host: 'localhost',
       port: 9000,
     },

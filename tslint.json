@@ -4,10 +4,19 @@
     "tslint-eslint-rules",
     "tslint-react",
     "tslint-consistent-codestyle",
+    "tslint-config-airbnb",
     "tslint-config-prettier"
   ],
   "rules": {
-    "no-submodule-imports": false,
-    "no-implicit-dependencies": [true, ["common"]]
+    "jsx-boolean-value": false,
+    "no-submodule-imports": [true, "classnames", "common", "components"],
+    "no-implicit-dependencies": [true, ["common", "pages", "components"]],
+    "variable-name": [true, "allow-pascal-case"],
+    "ordered-imports": [
+      true,
+      {
+        "named-imports-order": "case-insensitive"
+      }
+    ]
   }
 }

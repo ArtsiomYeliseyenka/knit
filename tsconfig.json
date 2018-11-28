@@ -3,15 +3,16 @@
     "outDir": "./dist/",
     "sourceMap": true,
     "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es2018",
-    "jsx": "react"
+    "module": "es2015",
+    "target": "es5",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "pages": ["src/pages"],
+      "components/*": ["src/components/*"]
+    }
   },
-  "include": [
-          "src/**/*"
-      ],
-      "exclude": [
-          "node_modules",
-          "**/*.spec.ts"
-      ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
