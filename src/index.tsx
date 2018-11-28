@@ -8,4 +8,4 @@ declare global {
 }
 import { Hello } from './components/hello';
 
-ReactDOM.render(<Hello compiler="TypeScript" framework="React"                   />, document.getElementById('app'));
+ReactDOM.render(<Hello compiler="TypeScript" framework="React" />, document.getElementById('app'));
