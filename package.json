@@ -20,7 +20,7 @@
       "tslint --fix",
       "git add"
     ],
-    "*.{scss,md}": [
+    "*.{scss,md,ts,tsx}": [
       "prettier --write",
       "git add"
     ]
