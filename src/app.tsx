@@ -1,12 +1,18 @@
 import { BaseLayout } from 'components/layouts';
-import { Landing } from 'pages';
+import { About, Contacts, Home, Shop } from 'pages';
 import { StatelessComponent } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
+
+const HomeRedirect: StatelessComponent = () => <Redirect to={'/home'} />;
 
 export const App: StatelessComponent = () => (
-  <BaseLayout>
-    <Router>
-      <Route path="/" exact component={Landing} />
-    </Router>
-  </BaseLayout>
+  <Router>
+    <BaseLayout>
+      <Route path="/" exact component={HomeRedirect} />
+      <Route path="/home" exact component={Home} />
+      <Route path="/shop" exact component={Shop} />
+      <Route path="/about" exact component={About} />
+      <Route path="/contacts" exact component={Contacts} />
+    </BaseLayout>
+  </Router>
 );

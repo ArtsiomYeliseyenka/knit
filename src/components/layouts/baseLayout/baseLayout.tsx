@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 export const BaseLayout: StatelessComponent = ({ children }) => {
   return (
-    <div className={cx('base-layout')}>
+    <div className={cx('baseLayout')}>
       <Header />
       <div className={cx('content')}>{children}</div>
       <Footer />

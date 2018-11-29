@@ -1,0 +1,35 @@
+.navItem {
+  display: inline-flex;
+  height: 100%;
+  font-family: $FONT-REGULAR;
+  font-size: $FONT-SIZE;
+  color: $FONT-COLOR;
+  text-decoration: none;
+
+  &:not(:last-child)::after {
+    content: '';
+    margin: 0 15px;
+    width: 2px;
+    height: 100%;
+    background-color: $COLOR--gray-2;
+  }
+
+  &:hover {
+    color: $FONT-COLOR-HOVER;
+  }
+
+  &.active {
+    color: $FONT-COLOR-ACTIVE;
+    cursor: default;
+  }
+
+  .icon {
+    margin: auto 5px auto 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .label {
+    margin: auto 0;
+  }
+}

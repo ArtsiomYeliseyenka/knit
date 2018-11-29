@@ -90,11 +90,6 @@ module.exports = (env = { development: true }) => {
             name: '[name].[ext]',
           },
         },
-
-        {
-          test: /\/*-inline.svg/,
-          loader: 'svg-inline-loader',
-        },
       ],
     },
 
@@ -123,6 +118,7 @@ module.exports = (env = { development: true }) => {
       compress: true,
       host: 'localhost',
       port: 9000,
+      historyApiFallback: true,
     },
   };
 };
