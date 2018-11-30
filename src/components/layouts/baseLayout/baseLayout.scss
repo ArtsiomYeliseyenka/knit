@@ -4,8 +4,27 @@
   width: 100%;
   height: 100%;
 
-  .content {
-    display: flex;
+  .scrollingArea {
+    position: relative;
     flex-grow: 1;
+
+    .wrapperOuter {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+      .wrapperInner {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+
+        .content {
+          display: flex;
+          flex-grow: 1;
+        }
+      }
+    }
   }
 }
