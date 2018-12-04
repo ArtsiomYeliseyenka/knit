@@ -1,0 +1,1 @@
+export { InstaItem } from './instaItem';

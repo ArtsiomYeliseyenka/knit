@@ -26,11 +26,20 @@
     ]
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.6",
     "@types/node": "^10.12.10",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/react-icons": "^2.2.6",
+    "@types/react-image-gallery": "^0.8.3",
+    "@types/react-router": "^4.4.1",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-slick": "^0.23.2",
     "autoprefixer": "^9.3.1",
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.2.0",
@@ -59,18 +68,15 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "@types/classnames": "^2.2.6",
-    "@types/react": "^16.4.18",
-    "@types/react-dom": "^16.0.9",
-    "@types/react-icons": "^2.2.6",
-    "@types/react-router": "^4.4.1",
-    "@types/react-router-dom": "^4.3.1",
     "classnames": "^2.2.6",
     "react": "^16.6.0",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.6.0",
     "react-icons": "^3.2.2",
+    "react-image-gallery": "^0.8.12",
     "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
+    "react-router-dom": "^4.3.1",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1"
   }
 }

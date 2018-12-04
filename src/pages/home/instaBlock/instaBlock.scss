@@ -1,0 +1,20 @@
+.instaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-bottom: 30px;
+
+  .heading {
+    margin-bottom: 30px;
+    font-family: $FONT-CONDBOLD;
+    font-size: $FONT-BIG;
+    color: $FONT-COLOR;
+  }
+  .carouselWrapper {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+}

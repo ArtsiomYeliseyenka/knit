@@ -9,9 +9,17 @@
   ],
   "rules": {
     "jsx-boolean-value": false,
-    "no-submodule-imports": [true, "classnames", "common", "components", "react-icons"],
+    "no-submodule-imports": [
+      true,
+      "classnames",
+      "common",
+      "components",
+      "react-icons",
+      "slick-carousel"
+    ],
     "no-implicit-dependencies": [true, ["common", "pages", "components"]],
     "variable-name": [true, "allow-pascal-case"],
+    "no-unused-expression": [true, "allow-fast-null-checks"],
     "ordered-imports": [
       true,
       {

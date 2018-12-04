@@ -1,0 +1,53 @@
+.spinningPreloader {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.preloader {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.preloaderPart {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 3px solid transparent;
+}
+.preloaderPart:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top-color: $COLOR--gray-3;
+  animation: spin 1.75s linear infinite;
+}
+.preloaderPart:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border-top-color: $COLOR--black-3;
+  animation: spin 1.25s linear infinite;
+}
+.preloaderPart:nth-child(3) {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  border-top-color: $COLOR--gray-2;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

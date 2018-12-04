@@ -55,8 +55,17 @@ module.exports = (env = { development: true }) => {
         },
 
         {
+          test: /\.css$/,
+          include: path.resolve(__dirname, 'node_modules'),
+          use: [
+            {loader: "style-loader"},
+            {loader: "css-loader"}
+          ]
+        },
+
+        {
           test: /\.(sa|sc|c)ss$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: path.resolve(__dirname, 'node_modules'),
           use: [
             devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
             {
@@ -83,7 +92,7 @@ module.exports = (env = { development: true }) => {
         },
 
         {
-          test: /\.(eot|otf|ttf|woff|woff2)(\?.*)?$/,
+          test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
           loader: 'url-loader',
           options: {
             limit: 1000,
