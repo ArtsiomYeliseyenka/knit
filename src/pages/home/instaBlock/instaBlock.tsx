@@ -4,7 +4,7 @@ import { SpinningPreloader } from 'components/preloaders/spinningPreloader';
 import { Component } from 'react';
 import * as styles from './instaBlock.scss';
 import { InstaItem } from './instaItem';
-import { IPost, IProps, IState } from './interface';
+import { IPost, IProps, IReceivedProps } from './interface';
 
 const cx = classNames.bind(styles);
 const carouselConfig = {
@@ -50,36 +50,22 @@ const carouselConfig = {
   speed: 500,
 };
 
-export class InstaBlock extends Component<IProps, IState> {
-  public state = {
-    posts: [],
-  };
+export class InstaBlock extends Component<IProps & IReceivedProps> {
+  constructor(props: IProps & IReceivedProps) {
+    super(props);
+    props.isFetched && props.toggleLoading();
+  }
+
   public componentDidMount(): void {
-    fetch(
-      'https://api.instagram.com/v1/users/self/media/recent/?access_token=4071267231.5cfdc59.daad985bd4a94656aa8b7fab3acf1bfa',
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((response) => {
-        this.setState(
-          {
-            posts: response.data.slice(9).map((post: any) => ({
-              comments: post.comments.count,
-              id: post.id,
-              image: post.images.standard_resolution.url,
-              likes: post.likes.count,
-              link: post.link,
-            })),
-          },
-          () => {
-            this.props.toggleLoading();
-          },
-        );
+    if (!this.props.isFetched) {
+      this.props.fetchInsta().then(() => {
+        this.props.toggleLoading();
       });
+    }
   }
 
   public render(): JSX.Element {
+    const { posts } = this.props;
     return (
       <div className={cx('instaBlock')}>
         <div className={cx('heading')}>Follow us in instagram</div>
@@ -88,7 +74,7 @@ export class InstaBlock extends Component<IProps, IState> {
             <SpinningPreloader />
           ) : (
             <Carousel {...carouselConfig}>
-              {this.state.posts.map((post: IPost) => (
+              {posts.map((post: IPost) => (
                 <InstaItem key={post.id} data={post} />
               ))}
             </Carousel>

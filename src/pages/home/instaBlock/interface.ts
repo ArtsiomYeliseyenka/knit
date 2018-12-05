@@ -2,9 +2,13 @@ export interface IProps {
   loading: boolean;
   toggleLoading: () => void;
 }
-export interface IState {
-  posts: IPost[] | [];
+
+export interface IReceivedProps {
+  isFetched: boolean;
+  posts: IPost[];
+  fetchInsta: any;
 }
+
 export interface IPost {
   id: string;
   image: string;

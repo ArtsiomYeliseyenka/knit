@@ -21,6 +21,7 @@ module.exports = (env = { development: true }) => {
         pages: path.resolve(__dirname, 'src/pages'),
         common: path.resolve(__dirname, 'src/common'),
         components: path.resolve(__dirname, 'src/components'),
+        reducers: path.resolve(__dirname, 'src/store/reducers'),
       },
     },
 

@@ -12,10 +12,10 @@ export const InstaItem: SFC<IProps> = ({ data }): JSX.Element => {
       <div className={cx('photo')} style={{ backgroundImage: `url(${data.image})` }} />
       <div className={cx('overlay')}>
         <div className={cx('stats')}>
-          <FaHeart className={cx('icon')} /> - {data.likes}
+          <FaHeart className={cx('icon')} /> {data.likes}
         </div>
         <div className={cx('stats')}>
-          <FaComment className={cx('icon')} /> - {data.comments}
+          <FaComment className={cx('icon')} /> {data.comments}
         </div>
         <div className={cx('backdrop')} />
       </div>

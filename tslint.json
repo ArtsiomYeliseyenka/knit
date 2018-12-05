@@ -14,10 +14,14 @@
       "classnames",
       "common",
       "components",
+      "reducers",
       "react-icons",
       "slick-carousel"
     ],
-    "no-implicit-dependencies": [true, ["common", "pages", "components"]],
+    "no-implicit-dependencies": [
+      true,
+      ["common", "pages", "components", "reducers", "redux-devtools-extension"]
+    ],
     "variable-name": [true, "allow-pascal-case"],
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "ordered-imports": [
