@@ -1,4 +1,4 @@
-import { IInsta } from './reducers/insta/interface';
+import { IInsta } from 'reducers/insta';
 
 export interface IAction {
   type: string;

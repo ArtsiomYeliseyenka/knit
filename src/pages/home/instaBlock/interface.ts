@@ -6,7 +6,7 @@ export interface IProps {
 export interface IReceivedProps {
   isFetched: boolean;
   posts: IPost[];
-  fetchInsta: any;
+  fetchInsta: () => Promise<void>;
 }
 
 export interface IPost {
