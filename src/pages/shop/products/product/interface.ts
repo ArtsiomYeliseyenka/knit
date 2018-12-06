@@ -5,6 +5,6 @@ export interface IProps {
   price: number;
   images: {
     thumbnail: string;
-    standard: string;
+    original: string;
   };
 }

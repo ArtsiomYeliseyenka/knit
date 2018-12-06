@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
-import { fetchInstaAction, IInsta, isFetchedSelector, postsSelector } from 'reducers/insta';
+import { fetchInstaAction, isFetchedSelector, postsSelector } from 'reducers/insta';
 import { compose } from 'redux';
+import { IReduxState } from 'store';
 import { InstaBlockPure } from './';
 
 const enhance = compose(
   connect(
-    (state: { insta: IInsta }) => ({
-      isFetched: isFetchedSelector(state.insta),
-      posts: postsSelector(state.insta),
+    (state: IReduxState) => ({
+      isFetched: isFetchedSelector(state),
+      posts: postsSelector(state),
     }),
     {
       fetchInsta: fetchInstaAction,

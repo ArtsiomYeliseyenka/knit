@@ -1,8 +1,8 @@
-import { IAction } from '../../interface';
+import { IReduxAction } from 'store';
 import { FETCH_INSTA_SUCCESS } from './constants';
 import { instaInitialState } from './initialState';
 
-export const instaReducer = (state = instaInitialState, { type, payload }: IAction) => {
+export const instaReducer = (state = instaInitialState, { type, payload }: IReduxAction) => {
   switch (type) {
     case FETCH_INSTA_SUCCESS:
       return { state, ...payload };

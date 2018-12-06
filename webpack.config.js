@@ -22,6 +22,7 @@ module.exports = (env = { development: true }) => {
       extensions: ['.ts', '.tsx', '.js', '.json'],
       alias: {
         pages: path.resolve(__dirname, 'src/pages'),
+        store: path.resolve(__dirname, 'src/store'),
         common: path.resolve(__dirname, 'src/common'),
         components: path.resolve(__dirname, 'src/components'),
         reducers: path.resolve(__dirname, 'src/store/reducers'),

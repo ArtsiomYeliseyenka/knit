@@ -14,13 +14,14 @@
       "classnames",
       "common",
       "components",
+      "store",
       "reducers",
       "react-icons",
       "slick-carousel"
     ],
     "no-implicit-dependencies": [
       true,
-      ["common", "pages", "components", "reducers", "redux-devtools-extension"]
+      ["common", "pages", "components", "reducers", "store", "redux-devtools-extension"]
     ],
     "variable-name": [true, "allow-pascal-case"],
     "object-literal-sort-keys": false,

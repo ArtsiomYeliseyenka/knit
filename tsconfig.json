@@ -11,6 +11,7 @@
     "baseUrl": ".",
     "paths": {
       "pages": ["src/pages"],
+      "store": ["src/store"],
       "components/*": ["src/components/*"],
       "common/*": ["src/common/*"],
       "reducers/*": ["src/store/reducers/*"]

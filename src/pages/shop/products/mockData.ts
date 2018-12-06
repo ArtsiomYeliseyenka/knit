@@ -10,7 +10,7 @@ export const mockData = [
     price: 25,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -21,7 +21,7 @@ export const mockData = [
     price: 30,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -32,7 +32,7 @@ export const mockData = [
     price: 50,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -43,7 +43,7 @@ export const mockData = [
     price: 11,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -54,7 +54,7 @@ export const mockData = [
     price: 100,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -65,7 +65,7 @@ export const mockData = [
     price: 25,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -76,7 +76,7 @@ export const mockData = [
     price: 45,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -87,7 +87,7 @@ export const mockData = [
     price: 95,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -98,7 +98,7 @@ export const mockData = [
     price: 10,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
   {
@@ -109,7 +109,7 @@ export const mockData = [
     price: 999999,
     images: {
       thumbnail: smallJpg,
-      standard: bigJpg,
+      original: bigJpg,
     },
   },
 ];

@@ -1,10 +1,10 @@
 import { IInsta } from 'reducers/insta';
 
-export interface IAction {
+export interface IReduxAction {
   type: string;
   payload?: any;
 }
 
-export interface IInitialState {
+export interface IReduxState {
   insta: IInsta;
 }
