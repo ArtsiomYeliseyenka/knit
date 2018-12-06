@@ -1,0 +1,31 @@
+.products {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 1060px;
+
+  @media (max-width: $SCREEN_MD_MAX) {
+    width: 790px;
+  }
+
+  @media (max-width: $SCREEN_SM_MAX) {
+    width: 520px;
+  }
+
+  @media (max-width: $SCREEN_XS_MAX) {
+    width: 250px;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    font-family: $FONT-CONDBOLD;
+    font-size: $FONT-BIG;
+    color: $FONT-COLOR;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+  }
+}

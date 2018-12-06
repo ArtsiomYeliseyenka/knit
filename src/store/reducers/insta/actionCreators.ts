@@ -18,7 +18,7 @@ export const fetchInstaAction = () => (dispatch: Dispatch) =>
       dispatch(
         fetchInfoSuccess({
           isFetched: true,
-          posts: response.data.slice(9).map((post: any) => ({
+          posts: response.data.slice(0, 9).map((post: any) => ({
             comments: post.comments.count,
             id: post.id,
             image: post.images.standard_resolution.url,

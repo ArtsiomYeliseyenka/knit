@@ -97,7 +97,7 @@ module.exports = (env = { development: true }) => {
           loader: 'url-loader',
           options: {
             limit: 1000,
-            name: '[name].[ext]',
+            name: 'media/[name].[ext]',
           },
         },
       ],

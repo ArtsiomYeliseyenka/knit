@@ -1,12 +1,7 @@
-export interface IProps {
-  loading: boolean;
-  toggleLoading: () => void;
-}
-
 export interface IReceivedProps {
   isFetched: boolean;
   posts: IPost[];
-  fetchInsta: () => Promise<void>;
+  fetchInsta: any;
 }
 
 export interface IPost {

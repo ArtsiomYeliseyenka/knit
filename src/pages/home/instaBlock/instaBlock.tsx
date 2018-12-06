@@ -1,10 +1,11 @@
 import * as classNames from 'classnames/bind';
 import { Carousel } from 'components/carousel';
 import { SpinningPreloader } from 'components/preloaders/spinningPreloader';
+import { ILoadingProps } from 'components/wrappers';
 import { Component } from 'react';
 import * as styles from './instaBlock.scss';
 import { InstaItem } from './instaItem';
-import { IPost, IProps, IReceivedProps } from './interface';
+import { IPost, IReceivedProps } from './interface';
 
 const cx = classNames.bind(styles);
 const carouselConfig = {
@@ -50,8 +51,8 @@ const carouselConfig = {
   speed: 500,
 };
 
-export class InstaBlock extends Component<IProps & IReceivedProps> {
-  constructor(props: IProps & IReceivedProps) {
+export class InstaBlock extends Component<ILoadingProps & IReceivedProps> {
+  constructor(props: ILoadingProps & IReceivedProps) {
     super(props);
     props.isFetched && props.toggleLoading();
   }

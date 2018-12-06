@@ -1,6 +1,10 @@
 export interface IProps {
-  children: ({  }: { loading: boolean; toggleLoading: () => void }) => JSX.Element;
+  children: ({  }: IProvidedProps) => JSX.Element;
 }
 export interface IState {
   loading: boolean;
+}
+export interface IProvidedProps {
+  loading: boolean;
+  toggleLoading: () => void;
 }
