@@ -7,7 +7,7 @@ declare module '*.jpg' {
   const content: any;
   export default content;
 }
-
+declare const INSTA_TOKEN: string;
 declare module 'react-custom-scrollbars' {
   export interface IPositionValues {
     top: number;

@@ -6,11 +6,8 @@ export const fetchInfoSuccess = (insta: IInsta) => ({
   payload: insta,
   type: FETCH_INSTA_SUCCESS,
 });
-
 export const fetchInstaAction = () => (dispatch: Dispatch) =>
-  fetch(
-    'https://api.instagram.com/v1/users/self/media/recent/?access_token=4071267231.5cfdc59.daad985bd4a94656aa8b7fab3acf1bfa',
-  )
+  fetch(`https://api.instagram.com/v1/users/self/media/recent/?access_token=${INSTA_TOKEN}`)
     .then((response) => {
       return response.json();
     })

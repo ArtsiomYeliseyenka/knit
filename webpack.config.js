@@ -1,8 +1,11 @@
+const dotenv = require('dotenv');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+dotenv.config();
 
 module.exports = (env = { development: true }) => {
   const devMode = env.development;
@@ -31,6 +34,9 @@ module.exports = (env = { development: true }) => {
         title: 'TypeScript',
         filename: 'index.html',
       }),
+      new webpack.DefinePlugin({
+        INSTA_TOKEN: JSON.stringify(process.env.INSTA_TOKEN),
+      }),
 
       ...(devMode
         ? [new webpack.HotModuleReplacementPlugin()]
@@ -58,10 +64,7 @@ module.exports = (env = { development: true }) => {
         {
           test: /\.css$/,
           include: path.resolve(__dirname, 'node_modules'),
-          use: [
-            {loader: "style-loader"},
-            {loader: "css-loader"}
-          ]
+          use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
         },
 
         {
