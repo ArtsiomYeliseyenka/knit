@@ -1,0 +1,31 @@
+.infoBlock {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  .title {
+    font-family: $FONT-LIGHT;
+    font-size: $FONT-SIZE-BIG;
+    color: $COLOR--black-1;
+    text-transform: capitalize;
+  }
+
+  .id {
+    font-family: $FONT-REGULAR;
+    font-size: $FONT-SIZE-SMALL;
+    color: $COLOR--gray-3;
+  }
+
+  .price {
+    font-family: $FONT-SEMIBOLD;
+    font-size: $FONT-SIZE;
+    color: $COLOR--gray-1;
+  }
+
+  .description {
+    font-family: $FONT-REGULAR;
+    font-size: $FONT-SIZE;
+    color: $COLOR--black-1;
+  }
+}

@@ -8,10 +8,16 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 25,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 1,
@@ -19,10 +25,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 30,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 2,
@@ -30,10 +38,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 50,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 3,
@@ -41,10 +51,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 11,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 4,
@@ -52,10 +64,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 100,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 5,
@@ -63,10 +77,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 25,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 6,
@@ -74,10 +90,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 45,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 7,
@@ -85,10 +103,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 95,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 8,
@@ -96,10 +116,12 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 10,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
   {
     id: 9,
@@ -107,9 +129,11 @@ export const mockData = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deleniti est maxime mollitia necessitatibus neque repudiandae vitae voluptatem voluptates! Aperiam architecto ex facere fugiat ipsum neque odit possimus quasi quo!',
     price: 999999,
-    images: {
-      thumbnail: smallJpg,
-      original: bigJpg,
-    },
+    images: [
+      {
+        thumbnail: smallJpg,
+        original: bigJpg,
+      },
+    ],
   },
 ];

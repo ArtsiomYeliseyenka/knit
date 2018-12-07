@@ -1,5 +1,5 @@
 import * as classNames from 'classnames/bind';
-import { ILoadingProps, WithLoading } from 'components/wrappers';
+import { ILoadingProps, WithLoading } from 'components/renderProps';
 import { SFC } from 'react';
 import * as styles from './home.scss';
 import { InstaBlock } from './instaBlock';

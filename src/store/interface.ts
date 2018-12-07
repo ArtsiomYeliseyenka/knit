@@ -1,10 +1,7 @@
 import { IInsta } from 'reducers/insta';
-
-export interface IReduxAction {
-  type: string;
-  payload?: any;
-}
+import { IActiveModal } from 'reducers/modal';
 
 export interface IReduxState {
   insta: IInsta;
+  modal: IActiveModal;
 }

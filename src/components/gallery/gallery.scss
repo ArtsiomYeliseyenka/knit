@@ -1,0 +1,18 @@
+.gallery {
+  position: relative;
+  width: 100%;
+
+  :global {
+    .image-gallery-thumbnail {
+      &.active {
+        border: 1px solid $COLOR--gray-2;
+      }
+    }
+    .image-gallery-fullscreen-button:hover::before,
+    .image-gallery-play-button:hover::before,
+    .image-gallery-left-nav:hover::before,
+    .image-gallery-right-nav:hover::before {
+      color: $COLOR--black-1;
+    }
+  }
+}

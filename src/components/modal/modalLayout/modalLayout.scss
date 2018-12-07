@@ -1,0 +1,76 @@
+.modalLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.scrollingContent {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $COLOR--black-1;
+  opacity: 0.5;
+  transition: opacity 300ms ease-in;
+  z-index: 1;
+}
+:global {
+  .modalBackdropAnimation-enter {
+    opacity: 0;
+  }
+  .modalBackdropAnimation-enter-active {
+    opacity: 0.5;
+  }
+  .modalBackdropAnimation-exit {
+    opacity: 0.5;
+  }
+  .modalBackdropAnimation-exit-active {
+    opacity: 0;
+  }
+}
+.modalWindow {
+  position: relative;
+  top: -50px;
+  display: inline-block;
+  margin: 0 20px;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  background-color: $COLOR--white-1;
+  text-align: left;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: top 300ms ease-in, opacity 300ms ease-in;
+}
+:global {
+  .modalWindowAnimation-enter {
+    opacity: 0;
+    top: -150px;
+  }
+  .modalWindowAnimation-enter-active {
+    opacity: 1;
+    top: -50px;
+  }
+  .modalWindowAnimation-exit {
+    opacity: 1;
+    top: -50px;
+  }
+  .modalWindowAnimation-exit-active {
+    opacity: 0;
+    top: -150px;
+  }
+}

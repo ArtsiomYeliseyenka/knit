@@ -1,10 +1,19 @@
-export interface IProps {
+export interface IProductImage {
+  thumbnail: string;
+  original: string;
+}
+
+export interface IProductInfo {
   id: number | string;
   title: string;
   description: string;
   price: number;
-  images: {
-    thumbnail: string;
-    original: string;
-  };
+}
+
+export interface IProps extends IProductInfo {
+  images: IProductImage[];
+}
+
+export interface IReceivedProps {
+  showModal: any;
 }

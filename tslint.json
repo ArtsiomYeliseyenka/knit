@@ -17,7 +17,8 @@
       "store",
       "reducers",
       "react-icons",
-      "slick-carousel"
+      "slick-carousel",
+      "react-image-gallery"
     ],
     "no-implicit-dependencies": [
       true,

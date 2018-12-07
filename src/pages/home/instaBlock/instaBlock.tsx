@@ -1,7 +1,7 @@
 import * as classNames from 'classnames/bind';
 import { Carousel } from 'components/carousel';
 import { SpinningPreloader } from 'components/preloaders/spinningPreloader';
-import { ILoadingProps } from 'components/wrappers';
+import { ILoadingProps } from 'components/renderProps';
 import { Component } from 'react';
 import * as styles from './instaBlock.scss';
 import { InstaItem } from './instaItem';

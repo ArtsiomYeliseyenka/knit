@@ -3,7 +3,7 @@
   height: 100%;
   font-family: $FONT-REGULAR;
   font-size: $FONT-SIZE;
-  color: $FONT-COLOR;
+  color: $FONT-LINK-COLOR;
   text-decoration: none;
 
   &:not(:last-child)::after {
@@ -15,11 +15,11 @@
   }
 
   &:hover {
-    color: $FONT-COLOR-HOVER;
+    color: $FONT-LINK-COLOR-HOVER;
   }
 
   &.active {
-    color: $FONT-COLOR-ACTIVE;
+    color: $FONT-LINK-COLOR-ACTIVE;
     cursor: default;
   }
 
